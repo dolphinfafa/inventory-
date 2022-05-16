@@ -1,3 +1,4 @@
+from json import load
 from openpyxl import Workbook, load_workbook
 from openpyxl.styles import *
 
@@ -12,17 +13,17 @@ products - 单品清单
 erp - 实际库存
 '''
 
-wb1 = load_workbook('products.xlsx')
-wb2 = load_workbook('sections.xlsx')
-wb3 = load_workbook('erp.xlsx')
+# wb = load_workbook('库存.xlsx')
+# ws = wb.active
 
-ws1 = wb1['Sheet0']
-ws2 = wb2['Sheet1']
-ws3 = wb3['download']
+# i = 3
+# while(True):
+#     name = ws.cell(i, 1).value
+#     if name == None:
+#         break
+#     print(name)
+#     i += 1
 
-a = ws2.cell(1034, 4).value
-b = ws3.cell(2, 6).value
-print(a)
+a = 'jjjj'
+b = a + '.xlsx'
 print(b)
-if a == b:
-    print('check')
